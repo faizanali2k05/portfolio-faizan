@@ -14,8 +14,17 @@ body {
 }
 
 .profile-img {
+  width: 100%;
   max-width: 280px;
-  border: 5px solid #ffc107;
+  height: 280px;
+  object-fit: cover;
+  border: 6px solid #ffc107;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+  transition: transform 0.25s ease;
+}
+
+.profile-img:hover {
+  transform: translateY(-6px) scale(1.02);
 }
 
 /* SECTIONS */
@@ -37,6 +46,37 @@ body {
   background: #ffc107;
   display: block;
   margin: 10px auto 0;
+}
+
+/* Navbar brand logo sizing */
+.navbar .navbar-brand img {
+  height: 36px;
+  width: auto;
+  margin-right: 8px;
+}
+
+/* Preloader (hidden by default) */
+.preloader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background: #0d1117;
+}
+
+/* Buttons */
+.btn-warning {
+  background: #ffc107;
+  border-color: #e0a800;
+  color: #0d1117;
+}
+
+/* Responsive tweaks */
+@media (max-width: 767px) {
+  .section { padding: 50px 0; }
+  .profile-img { height: 220px; max-width: 220px; }
+  .section-title { font-size: 1.25rem; }
 }
 
 /* SKILLS */
