@@ -165,8 +165,8 @@ p {
     pointer-events: none;
 }
 .preloader img {
-    max-width: 200px;
-    max-height: 50px;
+    max-width: 400px;
+    max-height: 200px;
 }
 /* Preloader End */
 
@@ -325,6 +325,11 @@ body .d2c_mobile_view {
     background: url(../images/contact_bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+}
+.d2c_experience_wrapper {
+    background: var(--primary_bg);
+    border-top: 1px solid var(--accent_color);
+    padding: 100px 0px;
 }
 /* Section Background End */
 
